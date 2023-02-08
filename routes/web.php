@@ -17,19 +17,25 @@ use App\Http\Controllers\StockController;
 //     return view('welcome');
 // });
 
-// Route::get('/stock', [StockController::class, 'index']);
+Route::get('/stock', [StockController::class, 'index']);
 
-Route::get('/stock/', function(){
-    return view('stock.list');
-});
+Route::post('/stock/create', [StockController::class, 'create']);
+
+// Route::get('/stock/', function(){
+//     return view('stock.list');
+// });
 
 Route::get('/stock/add', function(){
     return view('stock.add');
 });
 
-Route::get('/stock/edit', function(){
-    return view('stock.edit');
-});
+
+
+// Route::get('/stock/edit/', function(){
+//     return view('stock.edit');
+// });
+
+Route::get('/stock/edit/{id}', [StockController::class, 'edit']);
 
 
 

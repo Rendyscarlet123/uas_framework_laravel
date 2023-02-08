@@ -7,15 +7,15 @@
         <form>
             <div class="form-group">
                 <label for="">Name</label>
-                <input type="text" class="form-control" id="" placeholder="Stock name">
+                <input type="text" class="form-control" id="" placeholder="Stock name" value="<?= $data->stock_name; ?>">
             </div>
             <div class="form-group">
                 <label for="">Ticket</label>
-                <input type="text" class="form-control" id="" placeholder="Stock ticket">
+                <input type="text" class="form-control" id="" placeholder="Stock ticket" value="<?= $data->ticket; ?>">
             </div>
             <div class="form-group">
                 <label for="">Value</label>
-                <input type="number" class="form-control" id="" placeholder="Stock value">
+                <input type="number" class="form-control" id="" placeholder="Stock value" value="<?= $data->value; ?>">
             </div>
             <div class="form-group">
                 <button class="btn btn-primary">Update Stock</button>
